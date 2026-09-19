@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kabar Desa Melung</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="head-top">
+    <div class="container">
+      <a class="brand" href="#">
+        <img class="mark" src="https://melung.desa.id/themes/images/logo-bms.png" alt="Logo Desa Melung">
+        <span><small>Sistem Informasi Desa</small><strong>Melung</strong></span>
+      </a>
+      <span class="clock" id="clock"></span>
+    </div>
+  </div>
+  <nav>
+    <div class="container">
+      <ul class="menu">
+        <li><a href="#">Beranda</a></li>
+        <li><a>Profil <span class="chev">▾</span></a>
+          <ul class="sub"><li><a href="#">Tentang Kami</a></li><li><a href="#">Visi &amp; Misi</a></li><li><a href="#">Sejarah Desa</a></li><li><a href="#">Peta Desa</a></li></ul>
+        </li>
+        <li><a>Potensi Desa <span class="chev">▾</span></a>
+          <ul class="sub"><li><a href="#">Sumber Daya Alam</a></li><li><a href="#">Kesenian &amp; Budaya</a></li><li><a href="#">Sarana Prasarana</a></li></ul>
+        </li>
+        <li class="active"><a href="#">Kabar Desa</a></li>
+        <li><a>Pelayanan <span class="chev">▾</span></a>
+          <ul class="sub"><li><a href="#">Pelayanan Desa</a></li><li><a href="#">Kependudukan</a></li></ul>
+        </li>
+        <li><a href="#">Transparansi</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-title">
+      <h1>Kabar &amp; Berita Terkini<br><span>Desa Melung</span></h1>
+      <p>Informasi resmi, perkembangan pembangunan, dan kabar terbaru seputar kegiatan masyarakat.</p>
+    </div>
+    <a class="btn-home" href="#">Kembali ke Beranda</a>
+  </div>
+</section>
+
+<div class="container">
+  <div class="panel">
+    <div class="panel-head">
+      <div>
+        <h2>Seluruh Berita Desa</h2>
+        <p>Klik salah satu berita untuk membaca detailnya.</p>
+      </div>
+      <span class="pill" id="total">Total 6 Berita</span>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="pager">
+      <button>‹</button><button class="on">1</button><button>2</button><button>3</button><button>›</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="f-grid">
+      <div>
+        <h4>Desa Melung</h4>
+        <p>Website resmi Desa Melung, Kabupaten Banyumas. Menyajikan layanan publik, transparansi anggaran, dan kabar pembangunan desa.</p>
+      </div>
+      <div>
+        <h4>Statistik Pengunjung</h4>
+        <div class="stat"><span>Hari ini</span><b>172</b></div>
+        <div class="stat"><span>Bulan ini</span><b>5.491</b></div>
+        <div class="stat"><span>Total</span><b style="color:var(--mint)">80.392</b></div>
+      </div>
+      <div>
+        <h4>Kontak Desa</h4>
+        <p>Jalan Raya No. 50–51, Dusun II, Melung, Kec. Kedungbanteng<br>melung@gmail.com</p>
+      </div>
+    </div>
+    <div class="copy">© 2026 Pemerintah Desa Melung. Hak cipta dilindungi.</div>
+  </div>
+</footer>
+
+<!-- POPUP DETAIL BERITA -->
+<div class="overlay" id="overlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="modal-hero">
+      <button class="close" id="btnClose" aria-label="Tutup">×</button>
+      <span class="tag" id="mTag">BERITA DESA</span>
+      <h3 id="mTitle"></h3>
+      <div class="sub-meta" id="mMeta"></div>
+    </div>
+    <div class="modal-body" id="mBody"></div>
+    <div class="modal-foot">
+      <a class="btn primary" id="btnBuka" href="#" target="_blank" rel="noopener">Buka Berita</a>
+      <button class="btn" id="btnClose2">Tutup</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
