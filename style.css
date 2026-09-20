@@ -4,11 +4,6 @@
 }
 
 
-
-:root[data-theme="dark"] {
-  --ink: #f1f5f9; --body: #cbd5e1; --muted: #94a3b8; --line: #1e293b; --bg: #0b1220; --card: #111c2f;
-}
-
 * { box-sizing: border-box; }
 
 body {
@@ -141,8 +136,8 @@ footer { background: linear-gradient(135deg, #042f2e, var(--teal-800) 60%, #0d94
 .thumb {
   position: relative;
   height: 190px;
-  overflow: hidden; /* Mencegah isi/teks meluber keluar dari kartu */
-  background: #1e293b; /* Latar belakang cadangan jika gambar belum muncul */
+  overflow: hidden;
+  background: #1e293b; 
 }
 
 .thumb img {
@@ -150,6 +145,6 @@ footer { background: linear-gradient(135deg, #042f2e, var(--teal-800) 60%, #0d94
   height: 100%;
   object-fit: cover;
   display: block;
-  font-size: 11px; /* Menjaga teks alt tetap kecil jika gambar error */
+  font-size: 11px; 
   color: #94a3b8;
 }
